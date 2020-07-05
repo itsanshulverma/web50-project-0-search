@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+    <link rel="stylesheet" href="styles/base_styles.css" />
+    <style>
+      main div::after {
+        content: "images";
+        display: block;
+        font-size: 1.1em;
+        color: #4285f4;
+        position: relative;
+        top: -17%;
+        right: -39%;
+      }
+      input[type="search"]::-webkit-search-cancel-button {
+        padding-right: 10px;
+        border-right: 1px solid #dfe1e5;
+      }
+      input[type="submit"] {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+        background: url("img/search-blue.svg") no-repeat;
+        outline: none;
+        border: none;
+      }
+      @media only screen and (max-device-width: 725px) {
+        main div::after {
+          right: -42%;
+          font-size: 1em;
+        }
+      }
+      @media only screen and (max-device-width: 425px) {
+        main div::after {
+          right: -47%;
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Web</a>
+      <a href="advanced_search.html">Advanced</a>
+    </nav>
+    <main>
+      <div>
+        <img
+          class="brand-img"
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt="Google Branding Image"
+        />
+      </div>
+      <form action="https://google.com/search" class="search-bar">
+        <img class="search-icon" src="img/search-grey.svg" alt="search-icon" />
+        <input type="search" name="q" />
+        <input type="hidden" name="tbm" value="isch" />
+        <input type="submit" value="" />
+      </form>
+    </main>
+  </body>
+</html>

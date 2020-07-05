@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="styles/base_styles.css" />
+    <style>
+      input[type="submit"] {
+        display: inline-block;
+        padding: 10px 15px 10px 15px;
+        margin: 4px;
+        border: 1px solid #eeeeee;
+        border-radius: 4px;
+        text-align: center;
+        color: rgb(85, 85, 85);
+        cursor: pointer;
+        outline-color: #4d90fe;
+      }
+      input[type="submit"]:hover,
+      input[type="submit"]:focus {
+        color: #000000;
+        border: 1px solid #bebebe;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="image_search.html">Images</a>
+      <a href="advanced_search.html">Advanced</a>
+    </nav>
+    <main>
+      <img
+        class="brand-img"
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        alt="Google Branding Image"
+      />
+      <form action="https://google.com/search">
+        <div class="search-bar">
+          <img
+            class="search-icon"
+            src="img/search-grey.svg"
+            alt="search-icon"
+          />
+          <input type="search" name="q" />
+        </div>
+        <input type="submit" name="btnK" value="Google Search" />
+        <input type="submit" name="btnI" value="I am feeling Lucky" />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles/advanced_search_styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        alt="Google Branding Image"
+      />
+      <nav>
+        <a href="index.html">Web</a>
+        <a href="image_search.html">Images</a>
+      </nav>
+    </header>
+    <h2>Advanced Search</h2>
+    <hr />
+    <form action="https://google.com/search">
+      <label class="label-heading">Find pages with...</label>
+      <span class="span-heading">To do this in search box</span>
+
+      <div class="form-control">
+        <label for="as_q">all these words:</label>
+        <input type="text" name="as_q" />
+      </div>
+      <span>Type the important words: <kbd>tri-colour rat terrier</kbd></span>
+
+      <div class="form-control">
+        <label for="as_epq">this exact word or phrase:</label>
+        <input type="text" name="as_epq" />
+      </div>
+      <span>Put exact words in quotes: <kbd>"rat terrier"</kbd></span>
+
+      <div class="form-control">
+        <label for="as_oq">any of these words:</label>
+        <input type="text" name="as_oq" />
+      </div>
+      <span
+        >Type OR between all the words you want:
+        <kbd>miniature OR standard</kbd></span
+      >
+
+      <div class="form-control">
+        <label for="as_eq">none of these words:</label>
+        <input type="text" name="as_eq" />
+      </div>
+      <span>
+        Put a minus sign just before words that you don't want:
+        <kbd>-rodent, -"Jack Russell"</kbd>
+      </span>
+
+      <div class="form-control-submit">
+        <input type="submit" value="Advanced Search" />
+      </div>
+    </form>
+    <div class="footer">
+      <p>You can also...</p>
+      <div class="links">
+        <a
+          href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=en"
+          >Find pages that are similar to a URL</a
+        >
+        <a
+          href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=en"
+          >Search pages that you've visited</a
+        >
+        <a href="https://support.google.com/websearch?p=adv_operators&amp;hl=en"
+          >Use operators in the search box</a
+        >
+        <a href="https://www.google.com/preferences?hl=en-IN"
+          >Customise your search settings</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
